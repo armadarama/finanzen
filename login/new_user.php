@@ -116,7 +116,7 @@ class newuser {
 	function sqlcon($sqlquery=""){
 		$sql = new sql("blabla");
 		$sql->sql_res($this->insert());
-		$this->id = mysql_insert_id();
+		$this->id = mysqli_insert_id();
 		
 		$sql->sql_res($this->insertGeldbeutelKonto());
 		$sql->sql_res($this->insertDefaultKategorieAbheben());

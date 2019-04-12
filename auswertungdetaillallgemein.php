@@ -200,8 +200,8 @@ class detaillauswertung {
 		$eintraege = array();
 		if(is_array($this->res)){
 			foreach($this->res as $res){
-				if(mysql_num_rows($res["res"]) > 0){
-					while ($row = mysql_fetch_assoc($res["res"])) {
+				if(mysqli_num_rows($res["res"]) > 0){
+					while ($row = mysqli_fetch_assoc($res["res"])) {
 						$eintrag["betrag"] = $row["betrag"];
 						$eintrag["konto"] = $row["kontoname"];
 						$eintrag["kategorie"] = $row["kategorie"];

@@ -11,7 +11,7 @@ class testing {
 		$this->global = new globalefunktionen();
 		$res = $this->sqlabfrage();
 		foreach($res as $key => $result){
-			while ($row = mysql_fetch_assoc($result)) {
+			while ($row = mysqli_fetch_assoc($result)) {
 				$monat = substr_replace($row["datum"], '', 7,9);
 				$betrag = (int)$row["betrag"];
 				if($key == "ausgaben")

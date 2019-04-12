@@ -38,7 +38,7 @@ class showKategorien{
 		$contenteinnahmen .= '<optgroup label="Einnahmen">';
 		$contentausgaben .= '<optgroup label="Ausgaben">';
 		if(mysqli_num_rows($res) > 0){
-			while ($row = mysql_fetch_assoc($res)) {
+			while ($row = mysqli_fetch_assoc($res)) {
 				if($row["art"] == "einnahmen"){
 					$value = " [+]";
 					$contenteinnahmen .= '<option value="'.$row['kategorie'].','.$row['art'].'">'.$row['kategorie'].$value.'</option>';
@@ -71,7 +71,7 @@ class showKategorien{
 		$content .= '<label>'.$kontoName.'</label>';
 		$content .= '<select name="'.$anzahl.$kontoNameSelect.'" size="'.$selectAnzahl.'"'.$multiselect.'>';
 		if(mysqli_num_rows($res) > 0){
-			while ($row = mysql_fetch_assoc($res)) {
+			while ($row = mysqli_fetch_assoc($res)) {
 					$content .= '<option value="'.$row['kontoname'].'-'.$row['id'].'">'.$row['kontoname'].'</option>';
 			}
 		}

@@ -218,8 +218,8 @@ class kategorieauswertung {
 		$sql = new sql("blabla");
 		$res = $sql->sql_res($this->selectKategorien());
 		$sql->close();
-		if(mysql_num_rows($res) > 0){
-			while ($row = mysql_fetch_assoc($res)) {
+		if(mysqli_num_rows($res) > 0){
+			while ($row = mysqli_fetch_assoc($res)) {
 				if($row["art"] == "einnahmen"){
 					$kategorien[$row["art"]]["art"] = $row["art"];
 					$kategorien[$row["art"]][] = $row['kategorie'];

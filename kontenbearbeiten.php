@@ -146,7 +146,7 @@ class kontenbearbeiten{
 	function listKonten(){
 		$sqlquery = "SELECT id, kontoname, kontostand FROM konten WHERE uid=".$this->uid;
 		$res = $this->sqlcon($sqlquery);
-		while($row = mysql_fetch_assoc($res)){
+		while($row = mysqli_fetch_assoc($res)){
 			$id = $row["id"];
 			$konto = $row["kontoname"];
 			$konten[$id]["kontoname"] = $row["kontoname"];

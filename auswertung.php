@@ -163,8 +163,8 @@ class auswertung {
 		if(is_array($this->res)){
 			foreach($this->res as $res){
 				$name = $res["name"];
-				if(mysql_num_rows($res["res"]) > 0){
-					while ($row = mysql_fetch_assoc($res["res"])) {
+				if(mysqli_num_rows($res["res"]) > 0){
+					while ($row = mysqli_fetch_assoc($res["res"])) {
 						$summe = $summe + $row["betrag"];
 					}
 				}
@@ -237,8 +237,8 @@ class auswertung {
 		
 		if(is_array($res)){
 			foreach($res as $art => $result){
-				if(mysql_num_rows($result) > 0){
-					while ($row = mysql_fetch_assoc($result)) {
+				if(mysqli_num_rows($result) > 0){
+					while ($row = mysqli_fetch_assoc($result)) {
 						$monat = substr_replace($row["datum"], '', 7,9); // schneidet die Tage ab
 						$jahr = substr_replace($monat, '', 4,7); // zeigt nur das Jahr an
 						$jahr = (int)$jahr;

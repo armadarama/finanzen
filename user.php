@@ -16,8 +16,8 @@ class user{
 			$sql = new sql("blabla");
 			$query = "SELECT nickname, kennwort, email FROM benutzerdaten WHERE id=".$this->uid;
 			$res= $sql->sql_res($query);
-			if(mysql_num_rows($res) > 0){
-				while ($row = mysql_fetch_assoc($res)) {
+			if(mysqli_num_rows($res) > 0){
+				while ($row = mysqli_fetch_assoc($res)) {
 					$this->nickname = $row["nickname"];
 					$this->kennwort = $row["kennwort"];
 					$this->email = $row["email"];
@@ -89,7 +89,7 @@ class user{
 			$sql = new sql("blabla");
 			$sqlquery = "SELECT nickname FROM benutzerdaten WHERE nickname = '".$value."' AND id=".$this->getUserId();
 			$res= $sql->sql_res($sqlquery);
-			$row = mysql_affected_rows();
+			$row = mysqli_affected_rows();
 			$sql->close();
 			if($row > 0){
 				return TRUE;
@@ -106,7 +106,7 @@ class user{
 			$sql = new sql("blabla");
 			$sqlquery = "SELECT kennwort FROM benutzerdaten WHERE kennwort = '".$value."' AND id=".$this->getUserId();
 			$res= $sql->sql_res($sqlquery);
-			$row = mysql_affected_rows();
+			$row = mysqli_affected_rows();
 			$sql->close();
 			if($row > 0){
 				return TRUE;

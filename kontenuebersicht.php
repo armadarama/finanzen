@@ -107,8 +107,8 @@ class kontenuebersicht{
 	function listKonten(){
 		$this->sqlcon();
 		$eintraege = array();
-		if(mysql_num_rows($this->res) > 0){
-			while ($row = mysql_fetch_assoc($this->res)) {
+		if(mysqli_num_rows($this->res) > 0){
+			while ($row = mysqli_fetch_assoc($this->res)) {
 				$eintrag["kontoname"] = $row["kontoname"];
 				$eintrag["kontostand"] = $row["kontostand"];
 				$eintraege[] = $eintrag;

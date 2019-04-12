@@ -11,9 +11,9 @@ class login {
 	}
 
 	function session(){
-		if (mysql_num_rows ($this->res) > 0) {
+		if (mysqli_num_rows ($this->res) > 0) {
 			// Benutzerdaten in ein Array auslesen. 
-			$data = mysql_fetch_array ($this->res); 
+			$data = mysqli_fetch_array ($this->res); 
 		
 			// Sessionvariablen erstellen und registrieren 
 			$_SESSION["user_id"] = $data["id"]; 

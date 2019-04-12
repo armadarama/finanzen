@@ -80,8 +80,8 @@ class save{
 		';
 		$res = $sql->sql_res($stm);
 		$id ="";
-		if(mysql_num_rows($res) > 0){
-			while ($row = mysql_fetch_assoc($res)) {
+		if(mysqli_num_rows($res) > 0){
+			while ($row = mysqli_fetch_assoc($res)) {
 				$id = $row["id"];
 			}
 		}

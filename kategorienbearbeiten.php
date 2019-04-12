@@ -148,8 +148,8 @@ class kategorienbearbeiten{
 	function listKategorien(){
 		$sqlquery = "SELECT id, kategorie, art, aktiv FROM kategorien WHERE uid=".$this->uid;
 		$res = $this->sqlcon($sqlquery);
-		if(mysql_num_rows($res) > 0){
-			while($row = mysql_fetch_assoc($res)){
+		if(mysqli_num_rows($res) > 0){
+			while($row = mysqli_fetch_assoc($res)){
 				$kategorien[$row["art"]][$row["kategorie"]]["id"] = $row["id"];
 				$kategorien[$row["art"]][$row["kategorie"]]["aktiv"] = $row["aktiv"];
 			}

@@ -16,7 +16,7 @@ class userfreischalten{
 		$sql = new sql("blabla");
 		$sqlquery = "UPDATE benutzerdaten SET aktiv = 1 WHERE id = ".$this->id." AND hashcode = '".$this->hashcode."'";
 		$res = $sql->sql_res($sqlquery);
-		if(mysql_affected_rows() > 0){
+		if(mysqli_affected_rows() > 0){
 			echo "Der User mit der id ".$this->id." wurde freigeschaltet";
 		}
 		$sql->close();
