@@ -87,9 +87,9 @@ class getHSBCFile {
 		$allGood = true;
 		$noRowProcessed = true;
 		foreach($kategorien as $key => $kategorie){
-			$sqlquery = "SELECT kategorie FROM kategorien WHERE aktiv=1 AND kategorie in ('".mysql_real_escape_string($kategorie)."')";
+			$sqlquery = "SELECT kategorie FROM kategorien WHERE aktiv=1 AND kategorie in ('".mysqli_real_escape_string($kategorie)."')";
 			$res = $sql->sql_res($sqlquery);
-			if(mysql_num_rows($res) < 1){
+			if(mysqli_num_rows($res) < 1){
 				print $kategorie." ist keine vorhandene Kategorie in der datenbank.";
 				print "<br />";
 				$allGood = false;
@@ -106,7 +106,7 @@ class getHSBCFile {
 			print "Folgende Kategorien stehen zur verfuegung";
 			print "<br />";
 			print "<br />";
-			while($row = mysql_fetch_assoc($res)){
+			while($row = mysqli_fetch_assoc($res)){
 				print $row["kategorie"]."<br />";
 			}
 			print "<br />";

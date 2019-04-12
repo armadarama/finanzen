@@ -35,11 +35,11 @@ function insertVorhandeneCsv($vorhandeneCSVDaten, $sql, $account){
 		}
 		$csvInsertQuery .= '
 			(
-			'.mysql_real_escape_string($id).',
+			'.mysqli_real_escape_string($id).',
 			'.$_SESSION["user_id"].',
 			'.getKonto($account).',
-			"'.mysql_real_escape_string($value["SH"]).'",
-			"'.mysql_real_escape_string($value["kategorie"]).'"
+			"'.mysqli_real_escape_string($value["SH"]).'",
+			"'.mysqli_real_escape_string($value["kategorie"]).'"
 			)';
 		$counterCSVImport++;
 	}
@@ -109,9 +109,9 @@ function insertData($neueEintraege, $sql, $account){
 				$insertQueryIntelligenz .= ',';
 			}
 			$insertQueryIntelligenz .= '(
-						"'.mysql_real_escape_string($data[getEmpfaenger()]."\n".$data[getVerwendungszweck()]).'",
-						"'.mysql_real_escape_string($data["neuerverwendungszweck"]).'",
-						"'.mysql_real_escape_string($data["kategorie"]).'")';
+						"'.mysqli_real_escape_string($data[getEmpfaenger()]."\n".$data[getVerwendungszweck()]).'",
+						"'.mysqli_real_escape_string($data["neuerverwendungszweck"]).'",
+						"'.mysqli_real_escape_string($data["kategorie"]).'")';
 			
 			// Nach Kategorie ein und auszahlungenquery erstellen
 			if($data["kategorie"] == "Abheben" && $_SESSION["user_id"] == 1) {
@@ -131,11 +131,11 @@ function insertData($neueEintraege, $sql, $account){
 							'.$_SESSION["user_id"].',
 							'.$data["betrag"].',
 							'.$account_id.',
-							"'.mysql_real_escape_string($data["neuerverwendungszweck"]).'",
-							"'.mysql_real_escape_string($data["kategorie"]).'",
+							"'.mysqli_real_escape_string($data["neuerverwendungszweck"]).'",
+							"'.mysqli_real_escape_string($data["kategorie"]).'",
 							0,
 							"",
-							'.mysql_real_escape_string($datum).')';
+							'.mysqli_real_escape_string($datum).')';
 				}else if($data["SH"] == "S"){
 					$auszahlungsBetragGirokonto += $betrag;
 					$auszahlCounter++;
@@ -146,11 +146,11 @@ function insertData($neueEintraege, $sql, $account){
 							'.$_SESSION["user_id"].',
 							'.$data["betrag"].',
 							'.$account_id.',
-							"'.mysql_real_escape_string($data["neuerverwendungszweck"]).'",
-							"'.mysql_real_escape_string($data["kategorie"]).'",
+							"'.mysqli_real_escape_string($data["neuerverwendungszweck"]).'",
+							"'.mysqli_real_escape_string($data["kategorie"]).'",
 							0,
 							"",
-							'.mysql_real_escape_string($datum).')';
+							'.mysqli_real_escape_string($datum).')';
 				}
 			}
 			$gesamtCounter++;
@@ -250,11 +250,11 @@ function insertData($neueEintraege, $sql, $account){
 					}
 					$insertQueryEinnahmen .= '(
 						'.$_SESSION["user_id"].',
-						'.mysql_real_escape_string($datum).',
-						"'.mysql_real_escape_string($eintrag["kategorie"]).'",
-						"USA '.mysql_real_escape_string($eintrag["kategorie"]).'",
+						'.mysqli_real_escape_string($datum).',
+						"'.mysqli_real_escape_string($eintrag["kategorie"]).'",
+						"USA '.mysqli_real_escape_string($eintrag["kategorie"]).'",
 						'.$eintrag["betrag"].',
-						'.mysql_real_escape_string($account_id).')';
+						'.mysqli_real_escape_string($account_id).')';
 				}else if($eintrag["SH"] == "S"){
 					$auszahlungsBetrag += $betrag;
 					$auszahlCounter++;
@@ -263,11 +263,11 @@ function insertData($neueEintraege, $sql, $account){
 					}
 					$insertQueryAusgaben .= '(
 						'.$_SESSION["user_id"].',
-						'.mysql_real_escape_string($datum).',
-						"'.mysql_real_escape_string($eintrag["kategorie"]).'",
-						"USA '.mysql_real_escape_string($eintrag["kategorie"]).'",
+						'.mysqli_real_escape_string($datum).',
+						"'.mysqli_real_escape_string($eintrag["kategorie"]).'",
+						"USA '.mysqli_real_escape_string($eintrag["kategorie"]).'",
 						'.$eintrag["betrag"].',
-						'.mysql_real_escape_string($account_id).')';
+						'.mysqli_real_escape_string($account_id).')';
 				}
 			}
 			$gesamtCounter++;
@@ -326,9 +326,9 @@ function getDatum($datum){
 
 function getSqlQuery($sqlQuery, $sql){
 	$result = $sql->sql_res($sqlQuery);
-	if(mysql_num_rows($result) > 0){
+	if(mysqli_num_rows($result) > 0){
 		$arr = array();
-		while($row = mysql_fetch_assoc($result)){
+		while($row = mysqli_fetch_assoc($result)){
 			$arr[] = $row;
 		}
 		return $arr;

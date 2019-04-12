@@ -187,8 +187,8 @@ class Import {
 				$kategorie = new showKategorienImport();
 				$kategorie->setUid($_SESSION["user_id"]);
 				$resKategorien = $this->sql->sql_res($kategorie->selectKategorien());
-				if(mysql_num_rows($resKategorien) > 0){
-					while ($row = mysql_fetch_assoc($resKategorien)) {
+				if(mysqli_num_rows($resKategorien) > 0){
+					while ($row = mysqli_fetch_assoc($resKategorien)) {
 						$kategorieRows[] = $row;
 					}
 				}
