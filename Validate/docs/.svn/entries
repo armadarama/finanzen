@@ -1,0 +1,38 @@
+8
+
+dir
+91
+https://svn.tmp.de/bilfingerberger/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/docs
+https://svn.tmp.de/bilfingerberger
+
+
+
+2010-07-21T14:11:11.108952Z
+2
+
+
+
+svn:special svn:externals svn:needs-lock
+
+Example_Locale.php
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+980cd13ee74b34e30c518f877ed03c5c
+2010-07-21T14:11:11.108952Z
+2
+
+sample_multiple.php
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+16476cc19b07247ff048683427d1e4ff
+2010-07-21T14:11:11.108952Z
+2
+

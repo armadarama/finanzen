@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/bilfingerberger/!svn/ver/2/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests
+END
+email.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/bilfingerberger/!svn/ver/2/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests/email.phpt
+END
+number.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/bilfingerberger/!svn/ver/2/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests/number.phpt
+END
+multiple.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/bilfingerberger/!svn/ver/2/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests/multiple.phpt
+END
+testdate.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/bilfingerberger/!svn/ver/2/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests/testdate.phpt
+END
+uri.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/bilfingerberger/!svn/ver/2/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests/uri.phpt
+END
+multicard.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/bilfingerberger/!svn/ver/2/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests/multicard.phpt
+END

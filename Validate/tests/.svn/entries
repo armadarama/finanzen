@@ -1,0 +1,82 @@
+8
+
+dir
+91
+https://svn.tmp.de/bilfingerberger/trunk/typo3conf/ext/tmp_newhire/pi1/classes/Validate/tests
+https://svn.tmp.de/bilfingerberger
+
+
+
+2010-07-21T14:11:11.108952Z
+2
+
+
+
+svn:special svn:externals svn:needs-lock
+
+email.phpt
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+708b93dc5e886ad24659d369b0e37774
+2010-07-21T14:11:11.108952Z
+2
+
+number.phpt
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+1c7f996303ba665961aed645127e7886
+2010-07-21T14:11:11.108952Z
+2
+
+multiple.phpt
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+e296b32a00f909bfbb4ffc1ec483396b
+2010-07-21T14:11:11.108952Z
+2
+
+testdate.phpt
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+b600917e25b9c052efaba9659bf01d4b
+2010-07-21T14:11:11.108952Z
+2
+
+uri.phpt
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+0499ff097b6913432bc421f864996dd7
+2010-07-21T14:11:11.108952Z
+2
+
+multicard.phpt
+file
+
+
+
+
+2010-07-12T05:06:08.000000Z
+cf8996b7907ec50324effadec1bbae3c
+2010-07-21T14:11:11.108952Z
+2
+
