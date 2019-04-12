@@ -1,0 +1,506 @@
+body {
+	margin-top: 0px;
+}
+
+body div {
+	position: relative;
+	float: left;
+	clear: both;
+	display: block;
+	overflow: hidden;
+}
+
+form {
+	padding:0;
+	margin:0;
+	clear:both;
+	overflow:hidden;
+	position:relative;
+}
+
+#neueskonto form .kontodiv {
+	float:left;
+	clear: both;
+	margin: 3px;
+}
+
+#auswertungdetaill{
+}
+
+
+/* REPORT */
+
+/* REPORTANFRAGE */
+
+div.div.reportanfrage {
+	
+}
+
+div.div.reportanfrage div{
+	clear: none;
+	margin: 13px;
+}
+
+div.div.reportanfrage .timestamp{
+	
+}
+div.div.reportanfrage .timestamp.von{
+	
+}
+
+div.div.reportanfrage .timestamp.bis{
+	
+}
+
+div.div.reportanfrage .show{
+	
+}
+
+div.div.reportanfrage #showkategorien{
+	clear: left;
+}
+
+div.div.reportanfrage #showkonten{
+	
+}
+
+div.div.reportanfrage .input{
+	clear:both;
+	float:left;
+}
+
+div.div.reportanfrage .arten{
+	
+}
+
+
+
+/* REPORTANFRAGE ENDE */
+
+/* REPORT ENDE */
+
+
+/* VERTEILERSEITE */
+
+div#verteiler{
+	margin: 20px;
+}
+
+div#verteiler tr.1{
+	
+}
+
+div#verteiler tr.2{
+	
+}
+
+div#verteiler tr.3{
+	
+}
+
+div#verteiler td.links{
+	
+}
+
+div#verteiler td.rechts{
+	
+}
+
+div#verteiler table{
+	border: 0;
+}
+
+div#verteiler tr{
+	
+}
+
+div#verteiler td{
+	text-align: center;
+}
+
+div#verteiler a.bild{
+	color: #EFEFEF;
+}
+
+div#verteiler a:hover{
+	color:blue;
+}
+
+div#verteiler a.bild:hover{
+	color:#4F4F4F;
+}
+
+div#verteiler a{
+	text-decoration: none;
+	width: 100%;
+	color: #4F4F4F;
+}
+
+div#verteiler div.weiterleitpage{
+	text-align: center;
+	width: 300px;
+}
+
+div.auswertungtabelle {
+	margin-right: 40px;
+}
+
+/* VERTEILERSEITE ENDE */
+
+/* AUSWERTUNG */
+
+#auswertung div.timestamp{
+	float: left;
+	clear: none;
+}
+
+#auswertung div.timestamp.bis{
+	float: left;
+	clear: right;
+}
+
+#auswertung form{
+	clear: none;
+}
+
+#monatsanzeige h3, #monatsanzeige h1{
+	float: left;
+}
+
+#monatsanzeige h1{
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+#monatsanzeige h3.monat{
+	margin-right: 30px;
+}
+
+#monatsanzeige h3.lab{
+	margin-right: 5px;
+}
+
+/* AUSWERTUNG ENDE */
+
+
+.inaktiv{
+	color: grey;
+}
+
+#kategorisierungGraphmonat{
+	margin-top:20px;
+	width:100%;
+}
+
+#kategorisierungGraphgesamt{
+	
+}
+
+#kategorisierungGraphgesamt .graph{
+	clear: both;
+}
+
+.auswertungsgraphen{
+	clear: both;
+	margin-top: 30px;
+}
+
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+div.show {
+	margin-top: 5px; 
+}
+
+div.div {
+	background-color:#EFEFEF;
+	border:1px solid #999999;
+	margin-bottom:5px;
+	padding:5px;
+}
+
+#auswertungdetaill div{
+	clear: none;
+}
+
+#auswertungdetaill div.kategorienauswertung, #auswertungdetaill #detaillauflistung div.arttable {
+	clear: both;
+}
+
+#auswertungdetaill .auswertungdetaill{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#auswertungdetaill #monatsanzeige{
+	clear: right;
+	padding-top: 8px;
+}
+
+#auswertungdetaill #up{ 
+	width:100%;
+}
+
+#auswertungdetaill #detaillauflistung div.arttable{
+	
+}
+
+.hauptkategorie{
+	font-weight: bold;
+	background-color: #CCCCCC;
+}
+
+form#anzahl select{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+form#eintraege {
+}
+form#eintraege div{
+}
+
+form#eintraege div#art div#einnahmen{
+	float: left;
+}
+
+form#eintraege fieldset{
+	float: left;
+	margin-top:5px;
+	overflow: hidden;
+}
+
+div.timestamp fieldset{
+	width: auto;
+}
+
+div.timestamp div.dropdownbox {
+	float: left;
+	clear: none;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+div.timestamp div.dropdownbox label{
+	margin-right: 5px;
+}
+
+form#eintraege div#submitdown {
+	clear: both;
+}
+
+form#eintraege div.submit {
+	margin: 5px;
+}
+
+#periode .labelperiode{
+	
+}
+
+#periode .inputperiode{
+	vertical-align: middle;
+}
+
+#submitup p label {
+	margin-right: 4px;
+}
+
+#fieldsets label {
+	margin-right: 4px;
+}
+
+#header{
+	width: 100%;
+}
+
+#header h1 {
+	margin: 5px;
+	padding: 0;
+	font-size: 25px;
+}
+
+/* NAVIGATION */
+.navi {
+	width: 100%;
+	background-color: #EFEFEF;
+	margin-bottom: 5px;
+	border: 1px solid #999999;
+	border-top: 0;
+}
+
+#subnavi {
+	border-top: 1px solid #999999;
+}
+
+#subnavi ul {
+	margin-top: 5px;;
+}
+
+body div#abovenavi {
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	width: 100%;
+	height: 10px;
+	background-color: #EFEFEF;
+}
+
+.navi ul{
+	margin: 0px;
+	margin-top: 15px;
+	padding: 0px;
+	list-style: none;
+}
+
+.navi ul li {
+	float: left;
+	display: block;
+	text-decoration: none;
+	margin: 4px;
+}
+
+.navi li a{
+	text-decoration: none;
+	color: black;
+	border: 1px solid #999999;
+	border-bottom: 0;
+	padding: 4px;
+}
+
+.navi li a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.navi li a:hover {
+	color: #999999;
+	border: 1px solid #999999;
+	border-bottom: 0;
+	padding: 3px;
+	margin: 1px;
+}
+
+
+/* I D  #  P R O F I L */
+
+div.profil {
+	#color: #666666;
+}
+
+			/* I D  #  O B E N */
+
+
+#newhireinput div.labels {
+	width: 230px;
+	float:left;
+	clear: none;
+}
+
+#newhireinput div.labels .newhiretext{
+	float: left;
+	display: block;
+	clear: both;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 5px;
+}
+
+#newhireinput div.inputs {
+	width: 235px;
+	float:left;
+	clear: none;
+}
+
+#newhireinput label.fehlertext {
+	color: red;
+}
+
+#newhireinput div.inputs .newhireinput {
+	margin-top: 2px;
+	margin-bottom: 7px;
+}
+
+
+#newhireoben input.input {
+	width: 234px;
+}
+
+#newhireoben div.fehler {
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+#newhireoben div.fehlerborder{
+}
+
+#newhireoben label.fehler {
+	color: red;
+	float: left;
+	padding: 3px;
+	clear: both;
+}
+
+#newhireoben label.match {
+	color: green;
+	float: left;
+	padding: 3px;
+	clear: both;
+}
+
+
+
+
+
+/*/ index.php */
+#wrapfieldset {
+	display: block;
+}
+
+#fieldsets,#addDatensatz {
+	clear: none;
+}
+
+#addDatensatz {
+	margin-top: 14px;
+	width: 50px;
+	height: 239px;
+	background-image: url("img/adddata.png");
+}
+
+#addDatensatz:hover {
+	background-image: url("img/adddata_hover.png");
+	cursor: pointer;
+}
+
+.sortable th.header:hover {
+	cursor: pointer;
+}
+
+.sortable .header {
+    background-position: right center;
+    background-repeat: no-repeat;
+	background-image: url("img/bg.gif");
+	padding-right: 20px;
+	text-align: left;
+}
+
+.sortable .headerSortUp {
+	background-image: url("img/asc.gif");
+}
+
+.sortable .headerSortDown {
+	background-image: url("img/desc.gif");
+}
+
+
+
+
+
